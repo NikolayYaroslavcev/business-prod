@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+
+
+* {
+    box-sizing: border-box;
+    border: none;
+}
+
+:root {
+    /*Typography*/
+    --familyMonserat: "Montserrat", sans-serif;
+    --familyOpenSans: "Open Sans", sans-serif;
+    --fs-sm: 14px;
+    --fs-md: 18px;
+    --fw-light: 300;
+    --fw-regular:400;
+    --fw-normal: 600;
+    --fw-bold: 800;
+
+    /*Other*/
+
+    --raddii: 0.5rem;
+}
+a {
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    font-family: var(--familyMonserat);
+    color: var(--colors-text);
+    font-weight: var(--fw-light);
+    background-color: var(--colors-bg);
+}
+
+
+body[data-theme='dark'] {
+    --colors-text: hsl(0, 0%, 100%);
+    --colors-bg: hsl(207, 26%, 17%);
+    --colors-ui-base: hsl(209, 23%, 22%);
+    --burger-bg:#F5F5F5;
+    --shadow: rgba(245, 245, 245, 0.2) 0 0 8px;
+}
+body[data-theme='light'] {
+    --colors-text: hsl(200, 15%, 8%);
+    --colors-bg: hsl(0, 0%, 98%);
+    --colors-ui-base: hsl(0, 0%, 100%);
+    --burger-bg:hsl(200, 15%, 8%);
+    --shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
